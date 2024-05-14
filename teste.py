@@ -6,7 +6,7 @@ st.title('Teste cat - datas')
 
 st.write("Tabela")
 
-lista_data = [1310, 0101, 3005, 2006] 
+lista_data = [13, 1, 30, 20] 
 lista_nomes = ['niver cat', 'ano novo', 'corpus cristi', 'dia da amizade']
 
 texto = st.text_input("Digite um nome")
