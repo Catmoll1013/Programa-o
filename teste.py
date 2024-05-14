@@ -13,7 +13,7 @@ texto = st.text_input("Digite um nome")
 variavel = float(st.text_input("Digite a variavel", "0"))
 if texto:
     lista_nomes.append(texto)
-    lista_variavel.append(salario)
+    lista_variavel.append(variavel)
 
     dataframe = pd.DataFrame({
         'Nome': lista_nomes,
