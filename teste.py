@@ -2,22 +2,22 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.title('Teste ECMI 2')
+st.title('Teste cat')
 
 st.write("Tabela")
 
-lista_salario = [10, 20, 30, 40] 
-lista_nomes = ['Josir', 'Bruno', 'Bruna', 'Anna']
+lista_variavel = [10, 20, 30, 40] 
+lista_nomes = ['cat', 'moll', '19', '13/10']
 
 texto = st.text_input("Digite um nome")
-salario = float(st.text_input("Digite o salário", "0"))
+variavel = float(st.text_input("Digite a variavel", "0"))
 if texto:
     lista_nomes.append(texto)
-    lista_salario.append(salario)
+    lista_variavel.append(salario)
 
     dataframe = pd.DataFrame({
         'Nome': lista_nomes,
-        'Salário': lista_salario
+        'Salário': lista_variavel
     })
 
     dataframe.style.highlight_max(axis=0)
